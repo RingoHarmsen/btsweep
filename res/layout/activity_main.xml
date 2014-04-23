@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:textColor="@android:color/white"
+    android:background="@android:color/black"
+  >
+ 
+    <Button
+        android:id="@+id/scandevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:text="Scan"/>
+ 
+    <Button
+        android:id="@+id/clearlist"    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="@android:color/white" 
+        android:background="@android:color/black"
+        android:layout_toRightOf="@+id/scandevice"/>
+ 
+     <Button
+        android:id="@+id/nosound"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geluid aan" 
+        android:textColor="@android:color/white" 
+        android:background="@android:color/black"
+        android:layout_toRightOf="@+id/clearlist"/>
+     
+     <Button
+        android:id="@+id/extrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white" 
+        android:text="Exit"  
+        android:layout_toRightOf="@+id/nosound" />
+
+		<RelativeLayout 
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical" 
+    		android:layout_marginTop="45dip" >
+			<ListView
+			    android:id="@+id/devicesfound"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" 
+			    android:textColor="#FFFFFF"   >
+			</ListView>
+		</RelativeLayout>
+</RelativeLayout>

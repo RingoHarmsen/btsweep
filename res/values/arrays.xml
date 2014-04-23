@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="max_devices">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>Last hour</item>
+        <item>Today</item>
+    </string-array>
+</resources>    
